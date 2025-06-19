@@ -40,9 +40,58 @@
 }
 
 :root{
-    --font-family: {"Oswald","RobotoCondensed","RobotoSlab","Savate","WDXLubriJPN"};
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+    --font-family: "Oswald","RobotoCondensed","RobotoSlab","Savate","WDXLubriJPN";
     --font-small:3rem;
     --font-med:2rem;
     --font-large:3rem;
 }
 
+p{
+    font-family: "Oswald";
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+
+.main-container{
+    display:flex;
+    flex-direction: row;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.dash-container{
+    flex: 1;
+    background-color: red;
+    height:100%;
+    min-width:20%;
+    justify-items: center;
+}
+
+.content-container{
+    flex:5;
+    background-color: blue;
+    height: 100%;
+    min-width:85%
+}
+
+.dash-header{
+    display:flex;
+    flex-direction: row;
+}
+
+.icon{
+    width:32px;
+    height:32px;
+    align-self: center;
+}
