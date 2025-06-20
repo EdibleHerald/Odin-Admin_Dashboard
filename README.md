@@ -16,4 +16,5 @@ Here is what I want (more or less):
 
 Resolution:
 
-After some prodding, I found that the paragraph (<p>) element next to the icons were giving themselves margins that would forcibly expand the grid cell height, thus why the grid kept overflowing. For whatever reason, the "margin:0" I had on the ":root" did not apply here so I just had to manually do so onto the <p> element. 
+After some prodding, I found that the paragraph (< p >) element next to the icons were giving themselves margins that would forcibly expand the grid cell height, thus why the grid kept overflowing. For whatever reason, the "margin:0" I had on the ":root" did not apply here so I just had to manually do so onto the < p > element. 
+UPDATE 6/20/25: Took me far too long to realize that ":root"'s applied "margin:0" do not apply to children without specifying it.  

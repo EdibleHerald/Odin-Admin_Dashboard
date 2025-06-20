@@ -108,8 +108,8 @@ body{
 
 .icon{
     display: flex;
-    width:2vw;
-    height:3vh;
+    width:4vw;
+    height:4vh;
     align-self: center;
     justify-self: start;
 }
