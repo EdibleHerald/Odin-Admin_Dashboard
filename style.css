@@ -93,10 +93,9 @@ body{
 }
 
 .content-container{
-    flex:5;
     background-color: blue;
     height: 100%;
-    min-width:75%
+    min-width:75%;
 }
 
 /* Header */
@@ -205,6 +204,39 @@ body{
 }
 
 .content-main{
+    display:grid;
+    grid-template: 1fr / 2.8fr 1.2fr ;
     background-color: aqua;
+
+    @media(max-width:1024px){
+        grid-template: 3fr 1fr / 1fr ; 
+    }
 }
 
+.content-projectContainer{
+    display:grid;
+    grid-template:1fr 9fr/ 1fr;
+    padding:1rem;
+    background-color: blue;
+}
+
+.content-sidebar{
+    background-color: blueviolet;
+}
+
+.content-tileBoard{
+    display:grid;
+    grid-template:1fr 1fr 1fr/ 1fr 1fr;
+    gap:1rem;
+}
+
+.content-tile{
+    display:grid;
+    grid-template:1fr 2fr 1fr/1fr;
+    background-color: aquamarine;
+}
+
+.projectHeader{
+    font-size: var(--font-med);
+    margin:left
+}
