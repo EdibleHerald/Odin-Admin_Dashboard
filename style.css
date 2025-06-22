@@ -294,3 +294,42 @@ body{
     justify-self: center;
     align-self: center;
 }
+
+/* Dashboard sidebar */
+
+.content-sidebar{
+    display:grid;
+    grid-template:1fr 4fr/ 1fr;
+    justify-content: center;
+}
+
+.content-sidebar p{
+    font-size:var(--font-large);
+    font-family: var(--font-family);
+    justify-self: center;
+}
+
+.linkedin{
+    font-family: var(--font-family);
+    font-size: var(--font-med);
+    background-color: #018cd6;
+    display:flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    font-weight:700;
+}
+
+.linkedin img{
+    width:3vw;
+    height:3vh;
+    align-self: center;
+    justify-self: center;
+}
+
+.social-div{
+    justify-self: center;
+}
