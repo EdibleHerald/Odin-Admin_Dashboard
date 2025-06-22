@@ -230,21 +230,44 @@ body{
     gap:1rem;
     overflow: scroll;
     height:70vh;
+    padding-right:20px;
+    background-clip:content-box;
+    
+}
+
+.content-tileBoard::-webkit-scrollbar{
+    background: rgb(0, 0, 0);
+    
+}
+
+.content-tileBoard::-webkit-scrollbar-corner{
+    background-color:none ;
+}
+
+.content-tileBoard::-webkit-scrollbar-track-piece{
+    background-color: rgba(255, 255, 255, 0.904);
+    margin: 1rem;
+}
+
+.content-tileBoard::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
 }
 
 .content-tile{
     display:grid;
-    grid-template:1fr 2fr 1fr/1fr;
+    grid-template:0.5fr 1fr 1fr/1fr;
     background-color: aquamarine;
 }
 
 .content-tile p:first-child{
     padding-left:1rem;
+    padding-right:1rem;
     font-size: var(--font-med);
 }
 
 .content-tile p:nth-child(2){
     padding-left:1rem;
+    padding-right:1rem;
     font-size:var(--font-small);
 }
 
