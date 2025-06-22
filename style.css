@@ -130,6 +130,10 @@ body{
     justify-self: start;
 }
 
+.heart use:hover{
+    fill: red;
+}
+
 /* Sidebar */
 
 .dash-selectIcon{
@@ -283,4 +287,10 @@ body{
 
 .content-icons .icon{
     justify-self: center;
+    align-self: center;
+}
+
+.content-icons a{
+    justify-self: center;
+    align-self: center;
 }
